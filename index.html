@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        
+        <title>Desafio ONE</title>
+    </head>
+    <body>
+        <header>
+            <image src="assets/Vector.png" style="height: 50px; width: 30px;">
+        </header>
+        <main>
+            <div id="area-input">
+                <textarea id="texto-encriptar" autocapitalize="characters" placeholder="ingrese texto aquí"></textarea>
+                <div>
+                    <p>Solo letras mayusculas y sin acento</p>
+                    <button id="encriptar">Encriptar</button>
+                    <button id="desencriptar">Desencriptar</button>
+                </div>
+            </div>
+            <div id="false-output">
+                <img alt="" src="https://cdni.iconscout.com/illustration/premium/thumb/search-not-found-6275834-5210416.png">
+                <p class="encabezado">Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <div id="true-output">
+                <textarea id="resultado" readonly></textarea>
+                <button id="copiar">Copiar</button>
+        </main>
+        <footer>
+            <div class="copyright">
+                <p>&copy All rights reserved</p>
+            </div>
+        </footer>
+        <script src="functions.js"></script>
+    </body>
+</html>
